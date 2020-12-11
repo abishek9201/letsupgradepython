@@ -1,0 +1,45 @@
+#assignment 1 day 3('marks card')
+marks=int(input('enter the  marks obtained'))
+if marks in range(90,100):
+    print("grade=A+")
+elif marks in range(80,90):
+    print('grade=A')
+elif marks in range(70,80):
+    print('grade=B+')
+elif marks in range(60,70):
+    print('grade=B+')
+elif marks in range(50,60):
+    print('grade=c')
+elif marks in range(40,50):
+    print('grade=D')
+elif marks in range(30,40):
+    print('grade=E')
+else:
+    print('fail')
+#assignment 2 day 3('prime numbers from 1 to 1000')
+for num in range(1,1001):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+            break
+        else:
+            print(num, "is a prime number")
+#assignment 3 day 3("multliplication of tables from 1 to 10)
+for n in range(1,11):
+    for m in range(1,11):
+        print(n,"x ",m,"=", n*m)
+#assignment 4 day 3('prime numbers using while loop')
+Num = int(input(" Please Enter any Number: "))
+count = 0
+i = 2
+
+while(i <= Num//2):
+    if(Num % i == 0):
+        count = count + 1
+        break
+    i = i + 1
+
+if (count == 0 and Num != 1):
+    print(" is a Prime Number" ,Num)
+else:
+    print(" is not a Prime Number" ,Num)
